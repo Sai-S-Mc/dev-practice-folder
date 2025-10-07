@@ -1,15 +1,12 @@
-# Dev Practice Folder
+# Dev Practice Portfolio
 
-This is my technical skill-building space, separate from my project-based repositories.
-
-Right now, I'm focusing on vanilla front-end development - strengthening my HTML, CSS, and JavaScript fundamentals through daily, targeted practice.
+This repository is a focused showcase of my technical front-end skills, separate from my project-based work. It captures a structured collection of exercises and mini-projects designed to highlight my coding methodology, reasoning, and problem-solving approach in HTML, CSS, and JavaScript.
 
 Each subfolder contains:
-- Daily breakdowns of what I practiced
-- My reasoning, approach, and problem-solving notes
-- Clean, working code with commit history
+- Clear examples of code for core front-end topics
+- Explanations of my approach and problem-solving reasoning
+- Clean, working code with versioned commits reflecting my thought process
 
-Future additions may include:
-- React front-end practice
+Future subfolders may include additional exercises in React and Python to complement this initial collection. Subfolders may also be updated periodically to reflect new skills or refinements to existing exercises.
 
-This repo is designed to show my commitment to growing as a front-end developer, not just through polished projects, but through the day-to-day effort of mastering the fundamentals.
+This repository demonstrates my commitment to mastering the fundamentals of front-end development and my ability to translate knowledge into structured, readable, and functional code.
