@@ -1,0 +1,27 @@
+# Ignore common environment, system, and project-specific files for :
+# Vanilla Front-End, React, and Python projects
+
+# Node/React
+node_modules/
+npm-debug.log
+yarn-error.log
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+*.env
+
+# IDE / Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+Thumbs.db
+.DS_Store
