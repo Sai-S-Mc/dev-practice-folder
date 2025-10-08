@@ -6,7 +6,10 @@ Steps:
 3. If true, push it into the output array
 4. Return the output array */
 
+// Manually filter without using built-in methods
 function getEvenNumbers(array) {
+  // Returns an array of even numbers from the input array
+
   let outputArray = [];
 
   for (const number of array) {
@@ -17,6 +20,8 @@ function getEvenNumbers(array) {
   return outputArray;
 }
 
-// Test case
+/* Test case
+Input : array of numbers - [1, 6, 3, 4, 8, 9]
+Expected output : [6, 4, 8] */
+
 console.log(getEvenNumbers([1, 6, 3, 4, 8, 9]));
-// Expected output : [6,4,8]
