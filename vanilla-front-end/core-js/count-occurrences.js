@@ -2,11 +2,14 @@
 
 Steps:
 1. Loop through the array
-2. Add the array item and it's count to an object as a key-value pair
-3. If the array item already exists in object, increase the count
-4. Return the object with the array items and their occurences as key-value pairs */
+2. Add the array item and its count to an object as a key-value pair
+3. If the array item already exists in the object, increase its count
+4. Return the object with the array items and their occurrence as key-value pairs */
 
+// Manually count occurrences without using built-in methods
 function countOccurrences(array) {
+  // returns an object mapping the array items and their occurrence counts
+
   let outputObject = {};
 
   for (const item of array) {
@@ -20,9 +23,11 @@ function countOccurrences(array) {
   return outputObject;
 }
 
-// Test case
-// Input: ["apple", "banana", "apple", "cherry", "banana", "apple"]
+/* Test case
+Input: array of words - ["apple", "banana", "apple", "cherry", "banana", "apple"]
+Expected output: { "apple" : 3 , "banana" : 2, "cherry" : 1} */
+
 console.log(
-  countOccurrences(["apple", "banana", "apple", "cherry", "banana", "apple"])
+  "Manual logic : " +
+    JSON.stringify(countOccurrences(["apple", "banana", "apple", "cherry", "banana", "apple"]))
 );
-// Expected output: { apple : 3 , banana : 2, cherry : 1}
