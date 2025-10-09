@@ -11,7 +11,7 @@ Steps:
 3. Return the output as an array of numbers and/or strings */
 
 
-// Manually loop through the array without using built-in methods
+// No straightforward built-in method; the following manual method demonstrates loop and conditional logic
 function fizzBuzz() {
   // Returns an array of strings and numbers based on divisibility rules from 1 to 20
 
