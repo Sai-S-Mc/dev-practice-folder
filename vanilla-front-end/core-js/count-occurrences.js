@@ -47,29 +47,19 @@ Input: array of words - ["apple", "banana", "apple", "cherry", "banana", "apple"
 Expected output: { "apple" : 3 , "banana" : 2, "cherry" : 1} */
 
 // Run both manual and built-in methods with the same test array
+let countOccurrencesInputArray = [
+  "apple",
+  "banana",
+  "apple",
+  "cherry",
+  "banana",
+  "apple",
+];
 console.log(
   "Manual logic : " +
-    JSON.stringify(
-      countOccurrences([
-        "apple",
-        "banana",
-        "apple",
-        "cherry",
-        "banana",
-        "apple",
-      ])
-    )
+    JSON.stringify(countOccurrences(countOccurrencesInputArray))
 );
 console.log(
   "Built-in method (reduce) : " +
-    JSON.stringify(
-      countOccurrencesBuiltIn([
-        "apple",
-        "banana",
-        "apple",
-        "cherry",
-        "banana",
-        "apple",
-      ])
-    )
+    JSON.stringify(countOccurrencesBuiltIn(countOccurrencesInputArray))
 );
