@@ -8,7 +8,7 @@ Steps:
 
 // Manually count occurrences without using built-in methods
 function countOccurrences(array) {
-  // returns an object mapping the array items and their occurrence counts
+  // Returns an object mapping the array items to their occurrence counts
 
   let outputObject = {};
 
@@ -23,11 +23,53 @@ function countOccurrences(array) {
   return outputObject;
 }
 
+// Built-in method: reduce() to accumulate item counts into an object
+function countOccurrencesBuiltIn(array) {
+  // Returns an object mapping each array item to its frequency of occurrence
+
+  // The accumulator is named outputObject
+  return array.reduce((outputObject, fruit) => {
+    if (fruit in outputObject) {
+      outputObject[fruit]++;
+    } else {
+      outputObject[fruit] = 1;
+    }
+
+    /* Alternatively:
+      outputObject[fruit] = (outputObject[fruit] || 0) + 1; */
+
+    return outputObject;
+  }, {});
+}
+
 /* Test case
 Input: array of words - ["apple", "banana", "apple", "cherry", "banana", "apple"]
 Expected output: { "apple" : 3 , "banana" : 2, "cherry" : 1} */
 
+// Run both manual and built-in methods with the same test array
 console.log(
   "Manual logic : " +
-    JSON.stringify(countOccurrences(["apple", "banana", "apple", "cherry", "banana", "apple"]))
+    JSON.stringify(
+      countOccurrences([
+        "apple",
+        "banana",
+        "apple",
+        "cherry",
+        "banana",
+        "apple",
+      ])
+    )
+);
+console.log(
+  "Built-in method (reduce) : " +
+    JSON.stringify(
+      countOccurrencesBuiltIn([
+        "apple",
+        "banana",
+        "apple",
+        "cherry",
+        "banana",
+        "apple",
+      ])
+    )
 );
