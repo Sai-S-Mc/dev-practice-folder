@@ -33,11 +33,10 @@ Input : array of numbers - [10,2,33,42,60,12,5,36,81,5]
 Expected output : 81 */
 
 // Run both manual and built-in methods with the same test array
+let findLargestNumberInputArray = [10, 2, 33, 42, 60, 12, 5, 36, 81, 5];
+console.log(`Manual logic : ${findLargestNumber(findLargestNumberInputArray)}`);
 console.log(
-  `Manual logic : ${findLargestNumber([10, 2, 33, 42, 60, 12, 5, 36, 81, 5])}`
-);
-console.log(
-  `Built-in method (Math.max + spread) : ${findLargestNumberBuiltIn([
-    10, 2, 33, 42, 60, 12, 5, 36, 81, 5,
-  ])}`
+  `Built-in method (Math.max + spread) : ${findLargestNumberBuiltIn(
+    findLargestNumberInputArray
+  )}`
 );
