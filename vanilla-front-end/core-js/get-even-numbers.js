@@ -32,6 +32,6 @@ Input : array of numbers - [1, 6, 3, 4, 8, 9]
 Expected output : [6, 4, 8] */
 
 // Run both manual and built-in methods with the same test array
-let inputArray = [1, 6, 3, 4, 8, 9];
-console.log("Manual logic: ", getEvenNumbers(inputArray));
-console.log("Built-in method (filter): ", getEvenNumbersBuiltIn(inputArray));
+let getEvenNumbersInputArray = [1, 6, 3, 4, 8, 9];
+console.log("Manual logic: ", getEvenNumbers(getEvenNumbersInputArray));
+console.log("Built-in method (filter): ", getEvenNumbersBuiltIn(getEvenNumbersInputArray));
