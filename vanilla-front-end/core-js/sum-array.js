@@ -10,7 +10,7 @@ Steps:
 function sumArray(array) {
   // Returns the sum of the numbers in the input array
 
-  let sum = 0 ;
+  let sum = 0;
 
   for (const number of array) {
     sum = sum + number;
@@ -19,7 +19,26 @@ function sumArray(array) {
   return sum;
 }
 
+// Built-in method :  use reduce() to add up the numbers in an array
+function sumArrayBuiltIn(array) {
+  // Returns the sum of the numbers in the input array using the reduce method
+
+  // The accumulator is named sum
+  return array.reduce((sum, number) => {
+    return sum + number;
+  }, 0);
+
+  /* Alternatively:
+  return array.reduce((sum, number) => sum + number,0); */
+}
+
 /* Test case
 Input: array of numbers - [0,3,52,25,23,-3]
 Expected output : 100 */
-console.log(sumArray([0, 3, 52, 25, 23, -3]));
+
+// Run both manual logic and built-in method using the same test array
+let sumArrayInputArray = [0, 3, 52, 25, 23, -3];
+console.log(`Manual logic : ${sumArray(sumArrayInputArray)}`);
+console.log(
+  `Built-in method (reduce) : ${sumArrayBuiltIn(sumArrayInputArray)}`
+);
