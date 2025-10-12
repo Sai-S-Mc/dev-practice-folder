@@ -1,4 +1,4 @@
-/* Problem : Write a function that takes an array of numbers and returns the largest number
+/* Problem: Write a function that takes an array of numbers and returns the largest number
 
 Steps:
 1. Loop through the array
@@ -21,7 +21,7 @@ function findLargestNumber(array) {
   return largestNumber;
 }
 
-// Built-in method : Use Math.max with the spread operator (...) to find the largest number
+// Built-in method: Use Math.max with the spread operator (...) to find the largest number
 function findLargestNumberBuiltIn(array) {
   // Returns the largest number using Math.max
 
@@ -29,14 +29,14 @@ function findLargestNumberBuiltIn(array) {
 }
 
 /* Test case
-Input : array of numbers - [10,2,33,42,60,12,5,36,81,5]
-Expected output : 81 */
+Input: array of numbers - [10,2,33,42,60,12,5,36,81,5]
+Expected output: 81 */
 
 // Run both manual and built-in methods with the same test array
 let findLargestNumberInputArray = [10, 2, 33, 42, 60, 12, 5, 36, 81, 5];
-console.log(`Manual logic : ${findLargestNumber(findLargestNumberInputArray)}`);
+console.log(`Manual logic: ${findLargestNumber(findLargestNumberInputArray)}`);
 console.log(
-  `Built-in method (Math.max + spread) : ${findLargestNumberBuiltIn(
+  `Built-in method (Math.max + spread): ${findLargestNumberBuiltIn(
     findLargestNumberInputArray
   )}`
 );

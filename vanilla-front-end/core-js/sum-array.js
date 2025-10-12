@@ -19,7 +19,7 @@ function sumArray(array) {
   return sum;
 }
 
-// Built-in method :  use reduce() to add up the numbers in an array
+// Built-in method:  use reduce() to add up the numbers in an array
 function sumArrayBuiltIn(array) {
   // Returns the sum of the numbers in the input array using the reduce method
 
@@ -34,11 +34,11 @@ function sumArrayBuiltIn(array) {
 
 /* Test case
 Input: array of numbers - [0,3,52,25,23,-3]
-Expected output : 100 */
+Expected output: 100 */
 
 // Run both manual logic and built-in method using the same test array
 let sumArrayInputArray = [0, 3, 52, 25, 23, -3];
-console.log(`Manual logic : ${sumArray(sumArrayInputArray)}`);
+console.log(`Manual logic: ${sumArray(sumArrayInputArray)}`);
 console.log(
-  `Built-in method (reduce) : ${sumArrayBuiltIn(sumArrayInputArray)}`
+  `Built-in method (reduce): ${sumArrayBuiltIn(sumArrayInputArray)}`
 );

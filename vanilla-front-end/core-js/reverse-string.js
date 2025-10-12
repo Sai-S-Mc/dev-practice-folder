@@ -1,4 +1,4 @@
-/* Problem  : Write a function that takes a string and returns the reversed version of that string
+/* Problem: Write a function that takes a string and returns the reversed version of that string
 
 Steps:
 1. Loop through the string
@@ -19,7 +19,7 @@ function reverseString(str) {
 }
 
 /* Test case
-Input : string - "hello"
-Expected output : olleh */ 
+Input: string - "hello"
+Expected output: olleh */ 
 
 console.log(reverseString("hello"));

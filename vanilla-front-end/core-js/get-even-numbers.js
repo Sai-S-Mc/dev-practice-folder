@@ -1,4 +1,4 @@
-/* Problem : Extract even numbers from an input array into a new array
+/* Problem: Extract even numbers from an input array into a new array
 
 Steps:
 1. Loop through the input array
@@ -28,8 +28,8 @@ function getEvenNumbersBuiltIn(array) {
 }
 
 /* Test case
-Input : array of numbers - [1, 6, 3, 4, 8, 9]
-Expected output : [6, 4, 8] */
+Input: array of numbers - [1, 6, 3, 4, 8, 9]
+Expected output: [6, 4, 8] */
 
 // Run both manual and built-in methods with the same test array
 let getEvenNumbersInputArray = [1, 6, 3, 4, 8, 9];

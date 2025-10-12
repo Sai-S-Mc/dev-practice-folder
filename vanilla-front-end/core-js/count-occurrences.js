@@ -1,4 +1,4 @@
-/* Problem : Count occurrences of each item in an array
+/* Problem: Count occurrences of each item in an array
 
 Steps:
 1. Loop through the array
@@ -44,7 +44,7 @@ function countOccurrencesBuiltIn(array) {
 
 /* Test case
 Input: array of words - ["apple", "banana", "apple", "cherry", "banana", "apple"]
-Expected output: { "apple" : 3 , "banana" : 2, "cherry" : 1} */
+Expected output: { "apple":3 , "banana":2, "cherry":1} */
 
 // Run both manual and built-in methods with the same test array
 let countOccurrencesInputArray = [
@@ -56,10 +56,10 @@ let countOccurrencesInputArray = [
   "apple",
 ];
 console.log(
-  "Manual logic : " +
+  "Manual logic: " +
     JSON.stringify(countOccurrences(countOccurrencesInputArray))
 );
 console.log(
-  "Built-in method (reduce) : " +
+  "Built-in method (reduce): " +
     JSON.stringify(countOccurrencesBuiltIn(countOccurrencesInputArray))
 );

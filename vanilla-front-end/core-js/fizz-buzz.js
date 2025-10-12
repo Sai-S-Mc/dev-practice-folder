@@ -1,4 +1,4 @@
-/* Problem : Write a function that loops from 1 to 20
+/* Problem: Write a function that loops from 1 to 20
 For each number:
 - If divisible by 3, print "Fizz"
 - If divisible by 5, print "Buzz"
@@ -32,7 +32,7 @@ function fizzBuzz() {
 }
 
 /* Test case
-Input : none (1-20 range is fixed)
-Expected output : [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz', 16, 17, 'Fizz', 19, 'Buzz'] */
+Input: none (1-20 range is fixed)
+Expected output: [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz', 16, 17, 'Fizz', 19, 'Buzz'] */
 
 console.log(fizzBuzz());

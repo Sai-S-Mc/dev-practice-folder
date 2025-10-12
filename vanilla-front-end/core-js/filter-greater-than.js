@@ -22,6 +22,6 @@ function filterGreaterThan(array, threshold) {
 }
 
 /* Test case:
-Input : array of numbers - [4, 10, 3, 25, 8, 15] and threshold number - 9
-Expected output : [10, 25, 15] */
+Input: array of numbers - [4, 10, 3, 25, 8, 15] and threshold number - 9
+Expected output: [10, 25, 15] */
 console.log(filterGreaterThan([4, 10, 3, 25, 8, 15], 9));
