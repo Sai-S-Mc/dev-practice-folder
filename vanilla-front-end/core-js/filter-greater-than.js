@@ -2,9 +2,9 @@
 
 Steps:
 1. Loop through the array
-2. Compare each number in the array with the iven threshold
+2. Compare each number in the array with the given threshold
 3  Add numbers greater than the threshold to an output array
-4. Return an array of numbers */
+4. Return the output array */
 
 // Manually compare the numbers in the input array with the threshold
 function filterGreaterThan(array, threshold) {
@@ -21,7 +21,27 @@ function filterGreaterThan(array, threshold) {
   return outputArray;
 }
 
+// Built-in method: filter() to find numbers greater than the given threshold
+function filterGreaterThanBuiltIn(array, threshold) {
+  // Returns an array with only the numbers greater than the threshold
+
+  return array.filter((number) => number > threshold);
+}
+
 /* Test case:
-Input: array of numbers - [4, 10, 3, 25, 8, 15] and threshold number - 9
+Input: array of numbers - [4, 10, 3, 25, 8, 15] and threshold - 9
 Expected output: [10, 25, 15] */
-console.log(filterGreaterThan([4, 10, 3, 25, 8, 15], 9));
+
+// Run both manual and built-in methods with the same test case
+let filterGreaterThanInputArray = [4, 10, 3, 25, 8, 15];
+let threshold = 9;
+
+console.log(
+  `Manual logic: ${filterGreaterThan(filterGreaterThanInputArray, threshold)}`
+);
+console.log(
+  `Built-in method (filter): ${filterGreaterThanBuiltIn(
+    filterGreaterThanInputArray,
+    threshold
+  )}`
+);
