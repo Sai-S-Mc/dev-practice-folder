@@ -1,4 +1,4 @@
-/* Problem : Write a function that manually calculates the average of all numbers in an input array
+/* Problem: Write a function that manually calculates the average of all numbers in an input array
 
 Steps:
 1. Loop through the array
@@ -20,11 +20,31 @@ function findAverage(array) {
   return average;
 }
 
+// Built-in method: reduce() to add up all the numbers in an array and divide by array length
+function findAverageBuiltIn(array) {
+  // Returns the average of the numbers in an array
+
+  // The accumulator is named sum
+  const sum = array.reduce((sum, number) => (sum = sum + number), 0);
+  const average = sum / array.length;
+  return average;
+}
+
 /* Test case:
-Input : array of numbers - [12,0,6,-9,38]
-Expected output : 9.4 */
+Input: array of numbers - [12,0,6,-9,38]
+Expected output: 9.4 */
+
+// Run both manual and built-in methods with the same test array
+findAverageInputArray = [12, 0, 6, -9, 38];
 console.log(
-  `${findAverage([12, 0, 6, -9, 38])} that when rounded is ${Math.round(
-    findAverage([12, 0, 6, -9, 38])
-  )}`
+  `Manual logic: ${findAverage(
+    findAverageInputArray
+  )} which can be rounded to ${Math.round(findAverage(findAverageInputArray))}`
+);
+console.log(
+  `Built-in method (reduce): ${findAverageBuiltIn(
+    findAverageInputArray
+  )} which can be rounded to ${Math.round(
+    findAverageBuiltIn(findAverageInputArray)
+  )} `
 );
