@@ -18,8 +18,23 @@ function reverseString(str) {
   return outputString;
 }
 
+// Built-in method: use reverse() to reverse a string
+function reverseStringBuiltIn(str) {
+  // Returns the string reversed
+
+  return str.split("").reverse().join("");
+
+  /* Alternatively 
+  return [...str].reverse().join('')
+    or 
+  return Array.from(str).reverse().join('')*/
+}
+
 /* Test case
 Input: string - "hello"
-Expected output: olleh */ 
+Expected output: olleh */
 
-console.log(reverseString("hello"));
+// Run both manual and built-in methods with the same test case
+
+console.log(`Manual logic: ${reverseString("hello")}`);
+console.log(`Built-in method (reverse): ${reverseStringBuiltIn("hello")}`);
