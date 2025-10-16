@@ -7,14 +7,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Semantic HTML and CSS box model demonstration layout"
+    />
     <title>Semantic HTML and CSS box-model</title>
   </head>
   <body>
-    <!-- Header: contains site title and navigation -->
-    <header></header>
+    <!-- Header contains site title and navigation -->
+    <header>
+      <!-- Nav contains navigation links(links are for demonstration purposes only and are not functional) -->
+      <nav>
+        <figure>Logo</figure>
+        <ul>
+          <li><a href="#">Previous article</a></li>
+          <li><a href="#">Next article</a></li>
+        </ul>
+      </nav>
+      <h1>Semantic HTML and CSS box model</h1>
+    </header>
     <!-- Main contains content unique to this html page -->
-    <main></main>
+    <main>
+      <section>
+        <article>
+          <h2>Semantic HTML</h2>
+          <img
+            src="photo.jpg"
+            alt="A picture of HTML syntax"
+            title="A picture of HTML syntax"
+            width="200"
+          />
+          <p>
+            Semantic HTML refers to the practice of using HTML elements that
+            clearly describe the meaning and purpose of the content they
+            enclose, rather than merely defining their presentation or visual
+            appearance.
+          </p>
+        </article>
+        <article>
+          <h2>CSS Box Model</h2>
+          <p>
+            In CSS, the term "box model" is used when talking about web design
+            and layout. The CSS box model is essentially a box that wraps around
+            every HTML element. Every box consists of four parts: content,
+            padding, borders and margins.
+            <br />
+            <small
+              >Credits:
+              <a href="https://www.w3schools.com/css/css_boxmodel.asp"
+                >w3schools</a
+              >
+            </small>
+          </p>
+        </article>
+        <aside>
+          <h3>CSS</h3>
+          <p>
+            CSS, or Cascading Style Sheets, is a stylesheet language used to
+            describe the presentation and styling of a document written in a
+            markup language, primarily HTML. It controls how elements should be
+            rendered on various media, including screens, paper, and other
+            devices.
+          </p>
+        </aside>
+      </section>
+    </main>
     <!-- Footer contains supplementary information -->
-    <footer></footer>
+    <footer>
+      <ul>
+        <li>
+          The links displayed on this page are for demonstration purposes only
+        </li>
+        <li>Copyright notice</li>
+        <li>
+          Other links:
+          <br />
+          <a href="#">Contact me</a>
+          <br />
+          <a href="#">Related content</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
