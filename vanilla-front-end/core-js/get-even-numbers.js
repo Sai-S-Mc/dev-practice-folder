@@ -33,5 +33,10 @@ Expected output: [6, 4, 8] */
 
 // Run both manual and built-in methods with the same test array
 let getEvenNumbersInputArray = [1, 6, 3, 4, 8, 9];
+console.log(`\n---get-even-numbers---`);
+console.log(`Input: ${getEvenNumbersInputArray}`);
 console.log("Manual logic: ", getEvenNumbers(getEvenNumbersInputArray));
-console.log("Built-in method (filter): ", getEvenNumbersBuiltIn(getEvenNumbersInputArray));
+console.log(
+  "Built-in method (filter): ",
+  getEvenNumbersBuiltIn(getEvenNumbersInputArray)
+);

@@ -36,6 +36,8 @@ Expected output: [10, 25, 15] */
 let filterGreaterThanInputArray = [4, 10, 3, 25, 8, 15];
 let threshold = 9;
 
+console.log(`\n---filter-greater-than---`);
+console.log(`Input: array - ${filterGreaterThanInputArray} and threshold - ${threshold}`);
 console.log(
   `Manual logic: ${filterGreaterThan(filterGreaterThanInputArray, threshold)}`
 );

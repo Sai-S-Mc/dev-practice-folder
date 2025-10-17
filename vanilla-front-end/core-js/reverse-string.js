@@ -35,6 +35,10 @@ Input: string - "hello"
 Expected output: olleh */
 
 // Run both manual and built-in methods with the same test case
-
-console.log(`Manual logic: ${reverseString("hello")}`);
-console.log(`Built-in method (reverse): ${reverseStringBuiltIn("hello")}`);
+let reverseStringInput = "hello";
+console.log(`\n---reverse-string---`);
+console.log(`Input: ${reverseStringInput}`);
+console.log(`Manual logic: ${reverseString(reverseStringInput)}`);
+console.log(
+  `Built-in method (reverse): ${reverseStringBuiltIn(reverseStringInput)}`
+);

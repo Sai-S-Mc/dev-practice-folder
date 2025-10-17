@@ -36,6 +36,8 @@ Input: string of words - "hello world from javascript"
 Expected output: "Hello World From Javascript" */
 
 let titleCaseWordsInput = "hello world from javascript";
+console.log(`\n---title-case-words---`);
+console.log(`Input: ${titleCaseWordsInput}`);
 console.log(
   `Manual (split + loop + join) logic: ${titleCaseWords(titleCaseWordsInput)}`
 );

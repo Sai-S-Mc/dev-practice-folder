@@ -10,7 +10,6 @@ Steps:
 2. Generate an output of Fizz/Buzz/FizzBuzz/number based on divisibility
 3. Return the output as an array of numbers and/or strings */
 
-
 // No straightforward built-in method; the following manual method demonstrates loop and conditional logic
 function fizzBuzz() {
   // Returns an array of strings and numbers based on divisibility rules from 1 to 20
@@ -34,5 +33,6 @@ function fizzBuzz() {
 /* Test case
 Input: none (1-20 range is fixed)
 Expected output: [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz', 16, 17, 'Fizz', 19, 'Buzz'] */
-
+console.log(`\n---fizz-buzz---`);
+console.log(`Input: none (1-20 range is fixed)`);
 console.log(fizzBuzz());

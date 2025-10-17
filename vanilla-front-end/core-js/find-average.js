@@ -36,6 +36,8 @@ Expected output: 9.4 */
 
 // Run both manual and built-in methods with the same test array
 findAverageInputArray = [12, 0, 6, -9, 38];
+console.log(`\n---find-average---`);
+console.log(`Input: ${findAverageInputArray}`);
 console.log(
   `Manual logic: ${findAverage(
     findAverageInputArray
