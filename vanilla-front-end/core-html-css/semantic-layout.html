@@ -38,6 +38,25 @@
         color: seagreen;
         background-color: rgba(255, 255, 0, 0.5);
       }
+      .functional-link {
+        color: #FC6A03;
+      }
+      .link-color-note {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: 10px;
+      }
+      .link-color-note p {
+        margin: 0;
+      }
+      .link-color {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #FC6A03;
+      }
       img {
         padding: 20px;
         border: 5px solid violet;
@@ -60,12 +79,20 @@
   <body>
     <!-- Header contains site title and navigation -->
     <header>
+      <div class="link-color-note">
+        <p>Functional links are represented by this color =></p>
+        <div class="link-color"></div>
+      </div>
       <span class="section-label">This is the header section</span>
       <!-- Nav contains navigation links(Besides the homepage and the w3schools links, all other links are for demonstration purposes only and are not functional) -->
       <nav>
         <figure>Logo</figure>
         <ul>
-          <li><a href="/vanilla-front-end/index.html"><strong>Back to homepage</strong></a></li>
+          <li>
+            <a href="/vanilla-front-end/index.html" class="functional-link"
+              ><strong>Back to homepage</strong></a
+            >
+          </li>
           <li><a href="#">Previous article</a></li>
           <li><a href="#">Next article</a></li>
         </ul>
@@ -115,7 +142,9 @@
             <br />
             <small
               >Credit:
-              <a href="https://www.w3schools.com/css/css_boxmodel.asp"
+              <a
+                href="https://www.w3schools.com/css/css_boxmodel.asp"
+                class="functional-link"
                 >w3schools</a
               >
             </small>
@@ -139,7 +168,8 @@
       <span class="section-label">This is the footer section</span>
       <ul>
         <li>
-          Besides the homepage and the w3schools links, all other links displayed on this page are for demonstration purposes only
+          Besides the homepage and the w3schools links, all other links
+          displayed on this page are for demonstration purposes only
         </li>
         <li>Copyright notice</li>
         <li>
