@@ -37,13 +37,18 @@ let filterGreaterThanInputArray = [4, 10, 3, 25, 8, 15];
 let threshold = 9;
 
 console.log(`\n---filter-greater-than---`);
-console.log(`Input: array - ${filterGreaterThanInputArray} and threshold - ${threshold}`);
 console.log(
-  `Manual logic: ${filterGreaterThan(filterGreaterThanInputArray, threshold)}`
+  `Input: array - ${JSON.stringify(
+    filterGreaterThanInputArray
+  )} and threshold - ${threshold}`
 );
 console.log(
-  `Built-in method (filter): ${filterGreaterThanBuiltIn(
-    filterGreaterThanInputArray,
-    threshold
+  `Manual logic: ${JSON.stringify(
+    filterGreaterThan(filterGreaterThanInputArray, threshold)
+  )}`
+);
+console.log(
+  `Built-in method (filter): ${JSON.stringify(
+    filterGreaterThanBuiltIn(filterGreaterThanInputArray, threshold)
   )}`
 );

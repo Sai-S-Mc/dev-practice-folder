@@ -39,6 +39,6 @@ Expected output: 100 */
 // Run both manual logic and built-in method using the same test array
 let sumArrayInputArray = [0, 3, 52, 25, 23, -3];
 console.log(`\n---sum-array---`);
-console.log(`Input: ${sumArrayInputArray}`);
+console.log(`Input: ${JSON.stringify(sumArrayInputArray)}`);
 console.log(`Manual logic: ${sumArray(sumArrayInputArray)}`);
 console.log(`Built-in method (reduce): ${sumArrayBuiltIn(sumArrayInputArray)}`);

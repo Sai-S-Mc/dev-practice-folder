@@ -35,4 +35,4 @@ Input: none (1-20 range is fixed)
 Expected output: [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz', 16, 17, 'Fizz', 19, 'Buzz'] */
 console.log(`\n---fizz-buzz---`);
 console.log(`Input: none (1-20 range is fixed)`);
-console.log(fizzBuzz());
+console.log(JSON.stringify(fizzBuzz()));

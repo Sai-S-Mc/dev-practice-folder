@@ -56,7 +56,7 @@ let countOccurrencesInputArray = [
   "apple",
 ];
 console.log(`\n---count-occurrences---`);
-console.log(`Input: ${countOccurrencesInputArray}`);
+console.log(`Input: ${JSON.stringify(countOccurrencesInputArray)}`);
 console.log(
   "Manual logic: " +
     JSON.stringify(countOccurrences(countOccurrencesInputArray))
