@@ -1,0 +1,19 @@
+.functional-link {
+  color: #fc6a03;
+}
+.link-color-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+}
+.link-color-note p {
+  margin: 0;
+}
+.link-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fc6a03;
+}
