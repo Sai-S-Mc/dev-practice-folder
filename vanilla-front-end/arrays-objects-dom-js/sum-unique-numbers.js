@@ -31,10 +31,49 @@ function sumUniqueNumbers(array) {
   return sum;
 }
 
+/* Built-in method: 
+1. Use reduce() to map the array items and their occurrences into an object as key-value pairs
+2. Extract object keys from the object by using Object.keys()
+3. Use reduce() again to add up the numbers that appear only once in the original array */
+function sumUniqueNumbersBuiltIn(array) {
+  // Returns the sum of the unique numbers from the input array
+
+  let occurrencesObject = array.reduce((obj, number) => {
+    if (number in obj) {
+      obj[number]++;
+    } else {
+      obj[number] = 1;
+    }
+
+    /* Alternatively: 
+        obj[number] = (obj[number] || 0) + 1; */
+
+    return obj;
+  }, {});
+
+  return Object.keys(occurrencesObject).reduce((sum, key) => {
+    if (occurrencesObject[key] === 1) {
+      sum = sum + Number(key);
+    }
+    return sum;
+  }, 0);
+}
+
 /* Test case:
 Input: array of numbers - [1, 2, 2, 3, 4, 4, 5]
 Expected output: 9 */
 
 // Run both manual and built-in methods using the same test case
 sumUniqueNumbersInputArray = [1, 2, 2, 3, 4, 4, 5];
-console.log(`Manual logic (for...of and for...in loops): ${sumUniqueNumbers(sumUniqueNumbersInputArray)}`);
+console.log("\n---sum-unique-numbers---");
+console.log(`Input: ${JSON.stringify(sumUniqueNumbersInputArray)}`);
+console.log(
+  `Manual logic (for...of and for...in loops): ${sumUniqueNumbers(
+    sumUniqueNumbersInputArray
+  )}`
+);
+console.log(
+  `Built-in method (reduce and Object.keys): ${JSON.stringify(
+    sumUniqueNumbersBuiltIn(sumUniqueNumbersInputArray)
+  )}`
+);
