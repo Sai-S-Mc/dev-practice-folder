@@ -4,9 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla front end</title>
+    <style>
+      .functional-link {
+        color: #fc6a03;
+      }
+      .link-color-note {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: 10px;
+      }
+      .link-color-note p {
+        margin: 0;
+      }
+      .link-color {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fc6a03;
+      }
+    </style>
   </head>
   <body>
     <h1>Vanilla Front-End Skills Showcase</h1>
+    <div class="link-color-note">
+      <p>Functional links are represented by this color =></p>
+      <div class="link-color"></div>
+    </div>
 
     <h3>js-challenges</h3>
     <p>Check out the console for outputs</p>
@@ -22,7 +47,9 @@
         using margins, padding, borders, and box-sizing Keep everything in one
         file (semantic-layout.html) <br />
         <strong>Answer</strong>:
-        <a href="core-html-css/semantic-layout.html">semantic-layout.html</a>
+        <a href="core-html-css/semantic-layout.html" class="functional-link"
+          >semantic-layout.html</a
+        >
       </li>
     </ol>
 
