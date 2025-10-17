@@ -49,10 +49,11 @@ let isPalindromeInputArray = [
   "hello",
 ];
 
+console.log(`\n---is-palindrome---`);
 for (const input of isPalindromeInputArray) {
-  console.log(`\nInput: ${input}`);
+  console.log(`Input: ${input}`);
   console.log(`Manual logic: ${isPalindrome(input)}`);
   console.log(
-    `Built-in method (split + reverse + join): ${isPalindromeBuiltIn(input)}`
+    `Built-in method (split + reverse + join): ${isPalindromeBuiltIn(input)}\n~`
   );
 }
