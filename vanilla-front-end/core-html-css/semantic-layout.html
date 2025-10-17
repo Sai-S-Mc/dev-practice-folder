@@ -22,15 +22,32 @@
         box-sizing: border-box;
       }
       body {
-        margin: 30px;
+        margin: 30px auto;
+        max-width: 900px;
+        width: 95%;
+      }
+      header,
+      main,
+      footer {
+        border: 1px solid seagreen;
+        margin: 10px;
+        padding: 20px;
+      }
+      span.section-label {
+        font-style: italic;
+        color: seagreen;
+        background-color: rgba(255, 255, 0, 0.5);
       }
       img {
         padding: 20px;
         border: 5px solid violet;
         background-color: pink;
       }
+      figcaption {
+        font-size: small;
+      }
       .blog-content {
-        margin: 50px auto;
+        margin: 50px 0;
         border: 1px dotted blue;
         padding: 20px;
         max-width: 500px;
@@ -43,6 +60,7 @@
   <body>
     <!-- Header contains site title and navigation -->
     <header>
+      <span class="section-label">This is the header section</span>
       <!-- Nav contains navigation links(links are for demonstration purposes only and are not functional) -->
       <nav>
         <figure>Logo</figure>
@@ -55,25 +73,29 @@
     </header>
     <!-- Main contains content unique to this html page -->
     <main>
+      <span class="section-label">This is the main section</span>
       <section class="blog-content">
         <article class="html">
+          <span class="section-label">This is the first article</span>
           <h2>Semantic HTML</h2>
-          <img
-            src="photo.jpg"
-            alt="A picture of HTML syntax"
-            title="A picture of HTML syntax"
-            width="200"
-          />
-          <small
-            ><ul>
-              <li>Pink indicates padding</li>
-              <li>Violet indicates border</li>
-              <li>
-                Notice how the overall width of the image is still 200px because
-                of using border-box as the box-sizing
-              </li>
-            </ul></small
-          >
+          <figure>
+            <img
+              src="photo.jpg"
+              alt="A picture of HTML syntax"
+              title="A picture of HTML syntax"
+              width="200"
+            />
+            <figcaption>
+              <ul>
+                <li>Pink indicates padding</li>
+                <li>Violet indicates border</li>
+                <li>
+                  Notice how the overall width of the image is still 200px
+                  because of using border-box as the box-sizing
+                </li>
+              </ul>
+            </figcaption>
+          </figure>
           <p>
             Semantic HTML refers to the practice of using HTML elements that
             clearly describe the meaning and purpose of the content they
@@ -82,6 +104,7 @@
           </p>
         </article>
         <article>
+          <span class="section-label">This is the second article</span>
           <h2>CSS Box Model</h2>
           <p>
             In CSS, the term "box model" is used when talking about web design
@@ -99,6 +122,7 @@
         </article>
       </section>
       <aside>
+        <span class="section-label">This is the aside element</span>
         <h3>CSS</h3>
         <p>
           CSS, or Cascading Style Sheets, is a stylesheet language used to
@@ -111,6 +135,7 @@
     </main>
     <!-- Footer contains supplementary information -->
     <footer>
+      <span class="section-label">This is the footer section</span>
       <ul>
         <li>
           The links displayed on this page are for demonstration purposes only
