@@ -38,6 +38,7 @@ function sumUniqueNumbers(array) {
 function sumUniqueNumbersBuiltIn(array) {
   // Returns the sum of the unique numbers from the input array
 
+  // Accumulator is named obj
   let occurrencesObject = array.reduce((obj, number) => {
     if (number in obj) {
       obj[number]++;
@@ -51,6 +52,7 @@ function sumUniqueNumbersBuiltIn(array) {
     return obj;
   }, {});
 
+  // Accumulator is named sum
   return Object.keys(occurrencesObject).reduce((sum, key) => {
     if (occurrencesObject[key] === 1) {
       sum = sum + Number(key);
