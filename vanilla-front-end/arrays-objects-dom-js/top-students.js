@@ -45,6 +45,19 @@ function topStudents(array) {
   return filteredNames;
 }
 
+/* Built-in method: 
+- use filter() to extract only the information about students that scored above 90
+- use map() to transform the array of objects into just a n array with the student names
+- use sort() to sort the names in a lexicographical manner */
+function topStudentsBuiltIn(array) {
+  // Returns an array containing the names of the student sthat scored above 90
+
+  return array
+    .filter((studentObj) => studentObj.score > 90)
+    .map((studentObj) => studentObj.name)
+    .sort((a, b) => a.localeCompare(b)); // use localeCompare for robust alphabetical sort
+}
+
 /* Test case:
 Input: 
 [
@@ -68,4 +81,9 @@ console.log("\n---top-students---");
 console.log(`Input: ${JSON.stringify(students)}`);
 console.log(
   `Manual logic (selection sort): ${JSON.stringify(topStudents(students))}`
+);
+console.log(
+  `Built-in method (filter and sort): ${JSON.stringify(
+    topStudentsBuiltIn(students)
+  )}`
 );
