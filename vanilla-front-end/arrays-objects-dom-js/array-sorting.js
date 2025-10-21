@@ -5,8 +5,8 @@ Steps:
 1. Loop through the array to sort in ascending order
 2. Return the sorted array */
 
-function cloneArray(array){
-    return [...array]
+function cloneArray(array) {
+  return [...array];
 }
 
 /* Manually sort the array using selection sort:
@@ -19,31 +19,40 @@ function cloneArray(array){
 
 function arraySorting(array) {
   // Returns a new array sorted in ascending order using selection sort
-
+  
   let arrayCopy = cloneArray(array);
-
+  
   for (let i = 0; i < arrayCopy.length - 1; i++) {
-    let smallestValueIndex = i;
-    for (let j = i + 1; j < arrayCopy.length; j++) {
-      if (arrayCopy[smallestValueIndex] > arrayCopy[j]) {
-        smallestValueIndex = j;
-      }
+      let smallestValueIndex = i;
+      for (let j = i + 1; j < arrayCopy.length; j++) {
+          if (arrayCopy[smallestValueIndex] > arrayCopy[j]) {
+              smallestValueIndex = j;
+            }
+        }
+        
+        if (smallestValueIndex !== i) {
+            let temp = arrayCopy[i];
+            arrayCopy[i] = arrayCopy[smallestValueIndex];
+            arrayCopy[smallestValueIndex] = temp;
+        }
     }
-
-    if (smallestValueIndex !== i) {
-      let temp = arrayCopy[i];
-      arrayCopy[i] = arrayCopy[smallestValueIndex];
-      arrayCopy[smallestValueIndex] = temp;
-    }
-  }
-
-  return arrayCopy;
+    
+    return arrayCopy;
 }
 
+// Built-in method: use sort() with a comparator function
+
+function arraySortingBuiltIn(array) {
+    // Returns a new array sorted in ascending order using selection sort
+    
+    let arrayCopy = cloneArray(array);
+    
+  return arrayCopy.sort((a, b) => a - b);
+}
 
 /* Test case:
 Input: array of numbers - [5, 2, 9, 1, -10, -1];
-Expected output: [-10,-1,1,2,5,9] */
+Expected output: [-10, -1, 1, 2, 5, 9] */
 
 let arraySortingInput = [5, 2, 9, 1, -10, -1];
 
@@ -51,3 +60,8 @@ let arraySortingInput = [5, 2, 9, 1, -10, -1];
 console.log("\n---array-sorting---");
 console.log(`Input: ${JSON.stringify(arraySortingInput)}`);
 console.log(`Manual logic: ${JSON.stringify(arraySorting(arraySortingInput))}`);
+console.log(
+  `Built-in method (sort with comparator): ${JSON.stringify(
+    arraySortingBuiltIn(arraySortingInput)
+  )}`
+);
