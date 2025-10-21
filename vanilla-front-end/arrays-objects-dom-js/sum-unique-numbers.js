@@ -1,4 +1,5 @@
-/* Problem: You are given an array of numbers. Write a function that returns the sum of numbers that appear only once in the array.
+/* Problem: You are given an array of numbers. 
+Write a function that returns the sum of numbers that appear only once in the array.
 
 Steps:
 1. Loop through the array values
