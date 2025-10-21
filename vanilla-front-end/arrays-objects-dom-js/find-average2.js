@@ -21,7 +21,14 @@ function findAverage2(array) {
   return average;
 }
 
-// Built-in method: use
+// Built-in method: use reduce() to find sum and calculate average thereafter
+
+function findAverage2BuiltIn(array) {
+  // Returns the average of an array of numbers
+
+  // The accumulator is named sum
+  return array.reduce((sum, number) => sum + number, 0) / array.length;
+}
 
 /* Test case:
 Input: array of numbers - [2, 4, 6, 8]
@@ -32,3 +39,4 @@ let findAverage2InputArray = [2, 4, 6, 8];
 console.log("\n---find-average2---");
 console.log(`Input: ${JSON.stringify(findAverage2InputArray)}`);
 console.log(`Manual logic: ${findAverage2(findAverage2InputArray)}`);
+console.log(`Built in method (reduce): ${findAverage2BuiltIn(findAverage2InputArray)}`);
