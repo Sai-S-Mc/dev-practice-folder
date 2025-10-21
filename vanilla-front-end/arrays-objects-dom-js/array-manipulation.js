@@ -36,7 +36,7 @@ function arrayManipulationBuiltIn(array, threshold) {
 
 /* Test case:
 Input: array of numbers - [1, 5, 10, 3] and threshold - 4
-Expected output: 10, 20] */
+Expected output: [10, 20] */
 
 let arrayManipulationInputArray = [1, 5, 10, 3];
 let arrayManipulationThreshold = 4;
