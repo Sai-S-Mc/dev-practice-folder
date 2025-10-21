@@ -11,15 +11,27 @@ Steps:
 function arrayManipulation(array, threshold) {
   // Returns the doubled values of numbers greater than the threshold as an array
 
-  let result =[]
+  let result = [];
 
   for (const number of array) {
     if (number > threshold) {
-      result.push(number*2);
+      result.push(number * 2);
     }
   }
 
   return result;
+}
+
+/* Built-in method:
+- Filter numbers greater than the threshold
+- Map to double each filtered number */
+
+function arrayManipulationBuiltIn(array, threshold) {
+  // Returns an array containing the doubled values of numbers greater than the threshold
+
+  return array
+    .filter((number) => number > threshold)
+    .map((number) => number * 2);
 }
 
 /* Test case:
@@ -39,5 +51,13 @@ console.log(
 console.log(
   `Manual logic: ${JSON.stringify(
     arrayManipulation(arrayManipulationInputArray, arrayManipulationThreshold)
+  )}`
+);
+console.log(
+  `Built-in method (filter and map): ${JSON.stringify(
+    arrayManipulationBuiltIn(
+      arrayManipulationInputArray,
+      arrayManipulationThreshold
+    )
   )}`
 );
