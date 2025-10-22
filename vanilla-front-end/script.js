@@ -60,6 +60,18 @@ let htmlCssData = [
     url: "dom-html-css/dom-input.html",
     urlName: "dom-input.html",
   },
+  {
+    prompt:
+      "Create a simple interactive feature where clicking a button dynamically adds a new list item to an existing unordered list on the page.",
+    goal: "Demonstrate how to create, append, and update elements in the DOM using JavaScript",
+    requirements: [
+      "Include an empty ul element and a button labeled 'Add Item'",
+      "Each time the button is clicked, create a new li with text like 'Item 1', 'Item 2, etc.",
+      "Append the new list item to the ul using JavaScript.",
+    ],
+    url: "dom-html-css/dom-create.html",
+    urlName: "dom-create.html",
+  },
 ];
 
 let htmlCssElement = document.querySelector("#html-css-section");
