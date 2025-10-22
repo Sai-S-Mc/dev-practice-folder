@@ -48,6 +48,18 @@ let htmlCssData = [
     url: "dom-html-css/dom-basics.html",
     urlName: "dom-basics.html",
   },
+  {
+    prompt:
+      "Create a small interactive feature where a user types text into an input field, and that text immediately appears below it as they type.",
+    goal: "Demonstrate real-time DOM updates using event listeners and user input",
+    requirements: [
+      "Add an input element and a p element for displaying output",
+      "Update the p element's content to match what the user types",
+      "Optionally, include a brief placeholder in the input (e.g., “Type something here…”)",
+    ],
+    url: "dom-html-css/dom-input.html",
+    urlName: "dom-input.html",
+  },
 ];
 
 let htmlCssElement = document.querySelector("#html-css-section");
