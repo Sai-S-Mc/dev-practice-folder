@@ -26,8 +26,9 @@ function getHtmlCssData(data) {
 
 let htmlCssData = [
   {
-    prompt: "Now for the semantic HTML + box model layout challenge:",
-    goal: "Recreate a simple blog-style layout using only semantic HTML + box model (no Flexbox/Grid yet).",
+    prompt:
+      "Recreate a simple blog-style layout using only semantic HTML + box model (no Flexbox/Grid yet).",
+    goal: "Implement semantic HTML + CSS box model layout",
     requirements: [
       "Use only semantic HTML tags Style layout using margins, padding, borders, and box-sizing",
       "Keep everything in one file (semantic-layout.html)",
@@ -36,8 +37,9 @@ let htmlCssData = [
     urlName: "semantic-layout.html",
   },
   {
-    prompt: "Now for the basic DOM manipulation challenge:",
-    goal: "Select an existing h1 element and update its content and style using JavaScript.",
+    prompt:
+      "Select an existing h1 element and update its content and style using JavaScript.",
+    goal: "Demonstrate basic DOM manipulation using JavaScript",
     requirements: [
       "Select the h1 element by id or querySelector",
       "Change the text content to something new",
