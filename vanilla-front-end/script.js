@@ -9,7 +9,7 @@ function getRequirements(requirementArray) {
 function getHtmlCssData(data) {
   return data
     .map((obj) => {
-      return `<li>
+      return `<li class = "each-exercise">
         <strong>Prompt</strong> : ${obj.prompt} <br />
         <strong>Goal</strong>: ${obj.goal} <br />
         <strong>Requirements</strong>: <ul>${getRequirements(
@@ -34,6 +34,17 @@ let htmlCssData = [
     ],
     url: "core-html-css/semantic-layout.html",
     urlName: "semantic-layout.html",
+  },
+  {
+    prompt: "Now for the basic DOM manipulation challenge:",
+    goal: "Select an existing h1 element and update its content and style using JavaScript.",
+    requirements: [
+      "Select the h1 element by id or querySelector",
+      "Change the text content to something new",
+      "Update the color and font size using JS (.style)",
+    ],
+    url: "dom-html-css/dom-basics.html",
+    urlName: "dom-basics.html",
   },
 ];
 
