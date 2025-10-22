@@ -1,13 +1,32 @@
+<!-- 
+ Real-time DOM updates
+ Prompt: Create a small interactive feature where a user types text into an input field,
+ and that text immediately appears below it as they type.
+ -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Input</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
-    <h1>DOM Input Challenge</h1>
-    <a href="../index.html" class="functional-link">Back to homepage</a>
-</body>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DOM Input Challenge</h1>
+      <a href="../index.html" class="functional-link">Back to homepage</a>
+      <br />
+    </header>
+    <main>
+      <input
+        type="text"
+        id="user-input"
+        class="user-input"
+        placeholder="Type something here..."
+      />
+      <!-- User input will appear in the paragraph below -->
+      <p id="result"></p>
+    </main>
+    <script src="../arrays-objects-dom-js/dom-input.js"></script>
+  </body>
 </html>
