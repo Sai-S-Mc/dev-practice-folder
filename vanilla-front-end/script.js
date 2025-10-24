@@ -103,21 +103,21 @@ let htmlCssData = [
     urlName: "dom-create.html",
   },
   {
-    challenge: "Live text mirror",
+    challenge: "Dynamic list manager 2",
     overview:
-      "Implements real-time DOM updates by mirroring user input directly on the page as they type. This challenge highlights two-way interaction and immediate feedback in web interfaces.",
+      "This exercise demonstrates real-time DOM manipulation through creating, editing, and removing list items.",
     keyConcepts: [
-      "Listening for the input event",
-      "Updating text content dynamically",
-      "Managing user interactions with minimal code",
+      "Event delegation",
+      "Dynamic element creation",
+      "Efficient DOM updates",
     ],
     implementationDetails: [
-      "The page includes a text input and an empty paragraph",
+      "Includes an 'Add Item' button that allows users to add new list items",
       "As the user types, the paragraph content updates instantly to match the input",
       "Demonstrates real-time UI feedback and event-driven updates",
     ],
-    url: "dom-html-css/dom-create.html",
-    urlName: "dom-create.html",
+    url: "dom-html-css/dom-update.html",
+    urlName: "dom-update.html",
   },
 ];
 
