@@ -45,7 +45,7 @@ let htmlCssData = [
     implementationDetails: [
       "The layout includes a semantic header containing the site title and navigation",
       "Main content includes an article for a blog post and an aside for extra information",
-      "Footer contains developer and hosting information ",
+      "Footer contains additional information, a placeholder copyright notice, and demonstration links for navigation context",
       "CSS styling demonstrates spacing, alignment, and visual hierarchy using the box model",
     ],
     url: "core-html-css/semantic-layout.html",
@@ -69,6 +69,23 @@ let htmlCssData = [
     urlName: "dom-basics.html",
   },
   {
+    challenge: "Live text mirror",
+    overview:
+      "Implements real-time DOM updates by mirroring user input directly on the page as they type. This challenge highlights two-way interaction and immediate feedback in web interfaces.",
+    keyConcepts: [
+      "Listening for the input event",
+      "Updating text content dynamically",
+      "Managing user interactions with minimal code",
+    ],
+    implementationDetails: [
+      "The page includes a text input and an empty paragraph",
+      "As the user types, the paragraph content updates instantly to match the input",
+      "Demonstrates real-time UI feedback and event-driven updates",
+    ],
+    url: "dom-html-css/dom-input.html",
+    urlName: "dom-input.html",
+  },
+  {
     challenge: "Dynamic list manager",
     overview:
       "Showcases how to dynamically create, append, and update elements in the DOM, reinforcing how JavaScript can build and manage content structures in response to user interaction.",
@@ -82,8 +99,8 @@ let htmlCssData = [
       "Each button click creates a new li element ('Item 1', 'Item 2', etc.) appended to the list",
       "Demonstrates clean, reusable DOM update logic tied to event listeners",
     ],
-    url: "dom-html-css/dom-input.html",
-    urlName: "dom-input.html",
+    url: "dom-html-css/dom-create.html",
+    urlName: "dom-create.html",
   },
   {
     challenge: "Live text mirror",
