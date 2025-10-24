@@ -1,9 +1,15 @@
-function getKeyConcepts(requirementArray) {
-  return requirementArray
-    .map((eachRequirement) => {
-      return `<li>${eachRequirement}</li>`;
+function getKeyConcepts(conceptsArray) {
+  return conceptsArray
+    .map((eachConcept) => {
+      return `<li>${eachConcept}</li>`;
     })
     .join("");
+}
+
+function getImplementationDetails(DetailsArray) {
+  return DetailsArray.map((eachDetail) => {
+    return `<li>${eachDetail}</li>`;
+  }).join("");
 }
 
 function getHtmlCssData(data) {
@@ -14,6 +20,9 @@ function getHtmlCssData(data) {
         <strong>Overview</strong>: ${obj.overview} <br />
         <strong>Key Concepts</strong>: <ul>${getKeyConcepts(
           obj.keyConcepts
+        )}</ul>
+        <strong>Implementation Details</strong>: <ul>${getImplementationDetails(
+          obj.implementationDetails
         )}</ul>
         <strong>File</strong>:
         <a href = "${obj.url}" class="functional-link">
@@ -26,48 +35,69 @@ function getHtmlCssData(data) {
 
 let htmlCssData = [
   {
-    challenge:
-      "Recreate a simple blog-style layout using only semantic HTML + box model (no Flexbox/Grid yet).",
-    overview: "Implement semantic HTML + CSS box model layout",
+    challenge: "Semantic blog layout",
+    overview:
+      "Demonstrates a foundational HTML/CSS layout using semantic HTML and the CSS box model, emphasizing clean structure, accessibility, and predictable spacing.",
     keyConcepts: [
-      "Use only semantic HTML tags Style layout using margins, padding, borders, and box-sizing",
-      "Keep everything in one file (semantic-layout.html)",
+      "Use of semantic HTML tags (header, main, article, aside, footer)",
+      "Applying margins, padding, borders, and box-sizing for layout control",
+    ],
+    implementationDetails: [
+      "The layout includes a semantic header containing the site title and navigation",
+      "Main content includes an article for a blog post and an aside for extra information",
+      "Footer contains developer and hosting information ",
+      "CSS styling demonstrates spacing, alignment, and visual hierarchy using the box model",
     ],
     url: "core-html-css/semantic-layout.html",
     urlName: "semantic-layout.html",
   },
   {
-    challenge:
-      "Select an existing h1 element and update its content and style using JavaScript.",
-    overview: "Demonstrate basic DOM manipulation using JavaScript",
+    challenge: "Timed DOM update",
+    overview:
+      "Demonstrates foundational DOM manipulation by dynamically updating existing HTML content and styling using JavaScript. The focus is on selecting elements efficiently and applying visual changes through script-driven interaction.",
     keyConcepts: [
-      "Select the h1 element by id or querySelector",
-      "Change the text content to something new",
-      "Update the color and font size using JS (.style)",
+      "Selecting DOM elements (getElementById, querySelector)",
+      "Dynamic text and style updates",
+      "Using setTimeout() for delayed actions",
+    ],
+    implementationDetails: [
+      "The page begins with a static h1 element",
+      "After a short delay, JavaScript updates both its text content and visual styling",
+      "This illustrates how simple DOM scripts can control user-visible changes dynamically",
     ],
     url: "dom-html-css/dom-basics.html",
     urlName: "dom-basics.html",
   },
   {
-    challenge:
-      "Create a small interactive feature where a user types text into an input field, and that text immediately appears below it as they type.",
-    overview: "Demonstrate real-time DOM updates using event listeners and user input",
+    challenge: "Dynamic list manager",
+    overview:
+      "Showcases how to dynamically create, append, and update elements in the DOM, reinforcing how JavaScript can build and manage content structures in response to user interaction.",
     keyConcepts: [
-      "Add an input element and a p element for displaying output",
-      "Update the p element's content to match what the user types",
-      "Optionally, include a brief placeholder in the input (e.g., “Type something here…”)",
+      "Creating elements using document.createElement()",
+      "Appending new nodes to the DOM",
+      "Tracking state (list length) to label new elements sequentially",
+    ],
+    implementationDetails: [
+      "Includes a button labeled 'Add Item' and an initially empty ul",
+      "Each button click creates a new li element ('Item 1', 'Item 2', etc.) appended to the list",
+      "Demonstrates clean, reusable DOM update logic tied to event listeners",
     ],
     url: "dom-html-css/dom-input.html",
     urlName: "dom-input.html",
   },
   {
-    challenge:
-      "Create a simple interactive feature where clicking a button dynamically adds a new list item to an existing unordered list on the page.",
-    overview: "Demonstrate how to create, append, and update elements in the DOM using JavaScript",
+    challenge: "Live text mirror",
+    overview:
+      "Implements real-time DOM updates by mirroring user input directly on the page as they type. This challenge highlights two-way interaction and immediate feedback in web interfaces.",
     keyConcepts: [
-      "Include an empty ul element and a button labeled 'Add Item'",
-      "Each time the button is clicked, create a new li with text like 'Item 1', 'Item 2, etc.",
-      "Append the new list item to the ul using JavaScript.",
+      "Listening for the input event",
+      "Updating text content dynamically",
+      "Managing user interactions with minimal code",
+    ],
+    implementationDetails: [
+      "The page includes a text input and an empty paragraph",
+      "As the user types, the paragraph content updates instantly to match the input",
+      "Demonstrates real-time UI feedback and event-driven updates",
     ],
     url: "dom-html-css/dom-create.html",
     urlName: "dom-create.html",
