@@ -10,6 +10,9 @@ body {
 .text-center {
   text-align: center;
 }
+.hidden{
+  display: none;
+}
 .functional-link {
   color: #fc6a03;
   padding: 2px 2px 3px;
