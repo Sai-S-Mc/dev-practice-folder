@@ -1,6 +1,6 @@
 <!-- 
  Real-time DOM updates
- Prompt: Create a simple interactive list where users can add, edit, and delete items.
+ Prompt: Create a simple interactive list where users can add,and edit and delete the most recent item.
 Try to keep the code clean and avoid repetitive event listeners.
  -->
 <!DOCTYPE html>
@@ -12,7 +12,18 @@ Try to keep the code clean and avoid repetitive event listeners.
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <h1>DOM Update</h1>
+    <header>
+      <h1>DOM Update</h1>
+      <a href="../index.html">Back to homepage</a>
+    </header>
+    <main>
+      <button id="add-list-btn">Add list</button>
+      <button id="edit-list-btn">Edit list</button>
+      <button id="delete-list-btn">Delete list</button>
+      <p id="note">Add list items to start</p>
+      <!-- New list items can be added/edited/deleted below as the user interacts with the respective buttons -->
+      <ol id="ordered-list"></ol>
+    </main>
     <script src="../arrays-objects-dom-js/dom-update.js"></script>
   </body>
 </html>
