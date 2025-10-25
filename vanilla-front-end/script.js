@@ -6,10 +6,22 @@ function getKeyConcepts(conceptsArray) {
     .join("");
 }
 
-function getImplementationDetails(DetailsArray) {
-  return DetailsArray.map((eachDetail) => {
-    return `<li>${eachDetail}</li>`;
-  }).join("");
+function getImplementationDetails(detailsArray) {
+  return detailsArray
+    .map((eachDetail) => {
+      return `<li>${eachDetail}</li>`;
+    })
+    .join("");
+}
+
+function getUrlAndName(urlArray, urlNameArray) {
+  return urlArray
+    .map((url, index) => {
+      return `<a href="${url}" class="functional-link">
+        ${urlNameArray[index]}
+      </a>`;
+    })
+    .join("");
 }
 
 function getHtmlCssData(data) {
@@ -25,9 +37,7 @@ function getHtmlCssData(data) {
           obj.implementationDetails
         )}</ul>
         <strong>File</strong>:
-        <a href = "${obj.url}" class="functional-link">
-          ${obj.urlName}
-        </a>
+       ${getUrlAndName(obj.url, obj.urlName)}
       </li>`;
     })
     .join("");
@@ -48,8 +58,8 @@ let htmlCssData = [
       "Footer contains additional information, a placeholder copyright notice, and demonstration links for navigation context",
       "CSS styling demonstrates spacing, alignment, and visual hierarchy using the box model",
     ],
-    url: "core-html-css/semantic-layout.html",
-    urlName: "semantic-layout.html",
+    url: ["core-html-css/semantic-layout.html"],
+    urlName: ["semantic-layout.html"],
   },
   {
     challenge: "Timed DOM update",
@@ -65,8 +75,8 @@ let htmlCssData = [
       "After a short delay, JavaScript updates both its text content and visual styling",
       "This illustrates how simple DOM scripts can control user-visible changes dynamically",
     ],
-    url: "dom-html-css/dom-basics.html",
-    urlName: "dom-basics.html",
+    url: ["dom-html-css/dom-basics.html"],
+    urlName: ["dom-basics.html"],
   },
   {
     challenge: "Live text mirror",
@@ -82,8 +92,8 @@ let htmlCssData = [
       "As the user types, the paragraph content updates instantly to match the input",
       "Demonstrates real-time UI feedback and event-driven updates",
     ],
-    url: "dom-html-css/dom-input.html",
-    urlName: "dom-input.html",
+    url: ["dom-html-css/dom-input.html"],
+    urlName: ["dom-input.html"],
   },
   {
     challenge: "Dynamic list manager",
@@ -99,8 +109,8 @@ let htmlCssData = [
       "Each button click creates a new li element ('Item 1', 'Item 2', etc.) appended to the list",
       "Demonstrates clean, reusable DOM update logic tied to event listeners",
     ],
-    url: "dom-html-css/dom-create.html",
-    urlName: "dom-create.html",
+    url: ["dom-html-css/dom-create.html"],
+    urlName: ["dom-create.html"],
   },
   {
     challenge: "Dynamic list manager 2",
@@ -116,8 +126,8 @@ let htmlCssData = [
       "As the user types, the paragraph content updates instantly to match the input",
       "Demonstrates real-time UI feedback and event-driven updates",
     ],
-    url: "dom-html-css/dom-update.html",
-    urlName: "dom-update.html",
+    url: ["dom-html-css/dom-update.html", "dom-html-css/dom-update-pro.html"],
+    urlName: ["dom-update.html", "dom-update-pro.html"],
   },
 ];
 
