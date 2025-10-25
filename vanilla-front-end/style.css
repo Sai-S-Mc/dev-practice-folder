@@ -10,14 +10,17 @@ body {
 .text-center {
   text-align: center;
 }
-.hidden{
+.hidden {
   display: none;
 }
 .functional-link {
   color: #fc6a03;
-  padding: 2px 2px 3px;
+  padding: 2px 6px 3px;
   border-radius: 5px;
   transition: all ease-in-out 300ms;
+}
+footer .functional-link {
+  padding: 2px 2px 3px;
 }
 .functional-link:hover {
   background-color: #fc6a03;
