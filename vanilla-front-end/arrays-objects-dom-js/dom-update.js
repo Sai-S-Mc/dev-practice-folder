@@ -16,7 +16,7 @@ function setLastItemText() {
 
 function addList() {
   /* Create a list item, update its content and append it to the parent element.
-  If there's more than 1 list item, explicitly state that. */
+  If there's more than 1 list item, explicitly state which one's last. */
 
   let listItem = document.createElement("li");
   listContainer.appendChild(listItem);
