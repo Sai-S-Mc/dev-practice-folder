@@ -62,6 +62,26 @@ let htmlCssData = [
     urlName: ["semantic-layout.html"],
   },
   {
+    challenge: "Semantic form layout",
+    overview:
+      "Builds an accessible, structured form using semantic HTML, demonstrating proper labeling, input types, and validation hints, with CSS styling for spacing, focus, and error feedback.",
+    keyConcepts: [
+      "Semantic form elements (form, label, input, textarea)",
+      "Accessible label-input associations",
+      "CSS styling for spacing, borders, and focus states",
+      "CSS specificity for targeted styling",
+    ],
+    implementationDetails: [
+      "Fields include name, email, password, and a message",
+      "Each input paired with a label and optional validation hint",
+      "Visual feedback for focus/hover states",
+      "Layout uses box-sizing and spacing for alignment",
+      "Screen reader-friendly structure",
+    ],
+    url: ["core-html-css/semantic-form.html"],
+    urlName: ["semantic-form.html"],
+  },
+  {
     challenge: "Timed DOM update",
     overview:
       "Demonstrates foundational DOM manipulation by dynamically updating existing HTML content and styling using JavaScript. The focus is on selecting elements efficiently and applying visual changes through script-driven interaction.",
